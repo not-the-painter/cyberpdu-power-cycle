@@ -8,6 +8,17 @@ driver = webdriver.Chrome()
 CYCLES = 100
 
 def select_outlets():
+        # all outlets are selected by default, comment out outlets that aren't part of the test
+        outlet1 = driver.find_element(by=By.NAME, value="ActOut1")
+        outlet1.click()
+        outlet2 = driver.find_element(by=By.NAME, value="ActOut2")
+        outlet2.click()
+        outlet3 = driver.find_element(by=By.NAME, value="ActOut3")
+        outlet3.click()
+        outlet4 = driver.find_element(by=By.NAME, value="ActOut4")
+        outlet4.click()
+        outlet5 = driver.find_element(by=By.NAME, value="ActOut5")
+        outlet5.click()        
         outlet6 = driver.find_element(by=By.NAME, value="ActOut6")
         outlet6.click()
         outlet7 = driver.find_element(by=By.NAME, value="ActOut7")
